@@ -17,6 +17,7 @@ body p{
 	
 }
 
+
 .hr{
 	width: 100px;
 	height: 3px;
@@ -127,7 +128,19 @@ h2{
 .logo {
 		width: 50px ;
 	}
+	#navbar  a{
+		color:#4174C0;
 	
+	  }
+
+	  #navbar a.active {
+		color: #0462ef;
+		font-weight: bold;
+	  }
+	  #navbar a:hover {
+		color: #0462ef;
+	
+	  }
 .mvv-container .mvv-block .content{
 	overflow-y: scroll;
 	padding: 16px;
@@ -258,6 +271,19 @@ h3{
 		padding-bottom:15%;
 	}
 	
+	#navbar  a{
+		color:#4174C0;
+	
+	  }
+
+	  #navbar a.active {
+		color: #0462ef;
+		font-weight: bold;
+	  }
+	  #navbar a:hover {
+		color: #0462ef;
+	
+	  }
 }
 /* footer style*/
 footer{

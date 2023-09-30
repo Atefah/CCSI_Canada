@@ -13,162 +13,7 @@
     <script src="js/bootstrap.min.js"></script>
     <style>
 
-      *{
-        margin:0;
-	      padding:0;
-	      box-sizing:border-box;
-	      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-      }
-     .about-us{
-    
-        background: url(img/about-us.jpeg) no-repeat left;
-        background-size: 55%;
-        background-color: aliceblue;
-        overflow: hidden;
-        padding: 100px;
-      } 
-      .linerar-container{
-        width: 55%;
-      float: right;
-        background-color: #fdfdfd;
-        padding: 150px;
-
-      }
-      .linerar-container h1{
-        margin-bottom :30px;
-        font-size: 30px;
-        font-weight: 500;
-      }
-      .text{
-        font-size: 13px;
-        color: #545454;
-        line-height: 30px;
-        text-align: justify;
-        margin-bottom: 40px;
-      }
-      @media screen and (max-width: 1200px ) {
-        .linerar-container{
-          padding: 10px;
-
-        }
-      }
-
-      @media screen and (max-width: 1000px ) {
-        .about-us{
-          background-size: 100%;
-          padding: 100px 44px;
-
-        }
-        .linerar-container{
-          width: 100%;
-        }
-      }
-
-      @media screen and (max-width: 800px ) {
-        .about-us{
-          padding:0px;
-
-        }
-     
-        .linerar-container{
-          padding: 60px;
-        }
-      }
-
-
-
-      /* our services*/
-      .title h1{
-        text-align: center;
-        padding-top: 50px;
-        font-size: 42px;
-      }
-    
-      .services{
-        width: 85%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 85px auto;
-        text-align: center;
-      }
-      .card{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        margin: 0px 20px;
-        padding: 20px 20px;
-        background-color: #efefef;
-        border-radius: 10px;
-        cursor: pointer;
-
-      }
-      .card:hover{
-        background-image: linear-gradient(to right,white,#025196);
-        transition: 0.4 ease;
-
-      }
-      .card .icon{
-        font-size: 35px;
-        margin-bottom: 10px;
-
-      }
-
-      .card h1{
-        font-size: 28px;
-        color:#4174C0;
-        margin-bottom: 20px;
-      }
-      .card p{
-       font-size: 17px;
-       margin-bottom: 30px;
-       line-height: 1.5;
-       color: #545454;
-
-      }
-      
-      .button{
-        font-size: 15px;
-        text-decoration: none;
-        color: #fff;
-        background-color: #025196;
-        padding: 8px 12px;
-        border-radius: 5px;
-        letter-spacing: 1px;
-
-      }
-      .button:hover{
-        text-decoration: none;
-        color: #025196;
-        background-color: white ;
-        transition: 0.4s ease;
-      }
-      @media screen and (max-width: 940px ) {
-        .services{
-          display: flex;
-          flex-direction: column;
-      }
-      .card{
-        width: 85%;
-        display: flex;
-        margin: 28px 0px;
-      }
-
-  #navbar  a{
-		color:#4174C0;
-	
-	  }
-	  #navbar a.active {
-		color: #0462ef;
-		font-weight: bold;
-	  }
-	  #navbar a:hover {
-		color: #0462ef;
-	
-	  }
-  }
+   
 
     </style>
 </head>
@@ -178,7 +23,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark linear-gradient " id="navbar">
         <div class="container">
             <a class="navbar-brand" href="#" >
-              <img  src="img/Logo CCSI-Women-Canada.jpeg" alt="" id="logo" class="logo">
+              <img  src="img/CCSI Women Canada-01.png" alt="" id="logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -190,10 +35,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link active" href="index.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="#">Leadership & Experts</a>
+                    <a class="nav-link " href="LeaderShipAndExpirts.html">Leadership & Experts</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -222,7 +67,7 @@
       </div>
       <div class="services">
 
-        <div class="card">
+        <div class="services-card">
             <div class="icon">
                <!-- <i class="fas fa-calendar"></i> -->
             </div>
@@ -231,7 +76,7 @@
             <a href="" class="button">Read more</a>
         </div>
 
-        <div class="card">
+        <div class="services-card">
           <div class="icon">
              <!-- <i class="fas fa-wrench"></i> -->
           </div>
@@ -239,7 +84,7 @@
           <p>Compliance and Capacity Skills International-Asia Pacific (CCSI-APAC)’s team of experts supports Governments and industries in international and national security through the non-proliferation of missiles, weapons of mass destruction, and conventional weapons. </p>
           <a href="" class="button">Read more</a>
       </div>
-      <div class="card">
+      <div class="services-card">
         <div class="icon">
            <!-- <i class="fas fa-handshake"></i> -->
         </div>
@@ -255,7 +100,7 @@
         <div class="row">
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
                 <div>
-                    <img class="footer-logo" src="img/Logo CCSI-Women-Canada.jpeg" alt="">
+                    <img class="footer-logo" src="img/CCSI Women Canada-01.png" alt="">
                 </div>
             </div>
           

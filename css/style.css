@@ -75,7 +75,7 @@ h2{
   }
  .about-us{
 
-	background: url(img/about-us.jpeg) no-repeat left;
+	background: url(../img/about-us.jpeg) no-repeat left;
 	background-size: 55%;
 	background-color: aliceblue;
 	overflow: hidden;

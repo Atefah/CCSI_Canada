@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCSI Women Canada</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo done.png">
+
+    <link rel="Stylesheet" type="text/css" href="css/fontawesome-free-6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .contactSection{
+            background: #ffffff;
+        }
+      
+        .conntactUs{
+            position: relative;
+            width: 80%;
+            margin: auto;
+        }
+        .conntactUs .title{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 2em;
+        }
+        .conntactUs .title h1{
+            color: #025196;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .box{
+            position: relative;
+        }
+        .form{
+            grid-area: form;
+        }
+        .info{
+            grid-area: info;
+        }
+        /* .map{
+            grid-area: map;
+        } */
+        .contact{
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+        }
+        .box{
+            position: relative;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 5fr 4fr;
+            grid-template-areas: 
+            "form info";
+            /* "form map"; */
+            /* grid-gap: 20; */
+            /* margin: 20px; */
+        }
+        .contact h3{
+            color: #0e3959;
+            font-weight: 500;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+        .formBox{
+            position: relative;
+            width: 100%;
+        }
+        .formBox .row50{
+            display: flex;
+            gap: 20px;
+        }
+        .inputBox{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            width: 50%;
+        }
+
+        .formBox .row100 .inputBox{
+            width: 100%;
+        }
+        .inputBox span{
+            color: #025196;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .inputBox input textarea{
+           padding: 10px;
+           font-size: 1.1rem;
+           outline: none;
+           border: 1px solid #333;
+        }
+        .inputBox textarea{
+            resize: none;
+            min-height: 220px;
+            margin-bottom: 10px;
+
+        }
+        .inputBox input[type='submit']{
+            background: #025196;
+            color: #fff;
+            border: none;
+            font-size: 1.1rem;
+            max-width: 120px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 14px 15px;
+        }
+        
+        .inputBox input[type='submit']:hover{
+            color: #025196;
+            background-color: white;
+        }
+        .inputBox ::placeholder{
+            color: #999;
+            padding: 10px;
+        }
+        
+        .info{
+            background: #197bd1;
+
+        }
+        .info h1{
+            color: #fff;
+        }
+
+        .info .infoBox div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .info .infoBox div span i {
+            min-width: 40px;
+            height: 40px;
+            color: #fff;
+            background: #18b7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+       
+        .info .infoBox div p{
+            color: #fff;
+        }
+        .info .infoBox div a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .sci{
+            margin-top: 40px;
+            display: flex;
+        }
+        .sci li{
+            list-style: none;
+            margin-right: 15px;
+            color: #ccc;
+        }
+        .sci li a i{
+            color: white;
+            font-size: 2em;
+
+        }
+        .sci li a i:hover{
+            color: #ccc;
+        }
+       
+
+
+        @media (max-width:991px) {
+            .contactSection{
+                background: #03a9f5;
+            }
+            .conntactUs{
+                padding: 20px;
+            }
+            .box{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                 "form"
+                 "info";
+                 /* "map"; */
+            }
+            
+            .formBox .row50{
+                display: flex;
+                gap: 0;
+                flex-direction: column;
+
+            }
+            .inputBox{
+                width: 100%;
+            }
+            .contact{
+                padding: 30px;
+            }
+
+            .map{
+                min-height: 300px; 
+                padding: 0;  
+            }
+        }
+
+
+
+    </style>
+</head>
+<body onscroll="reswize()">     
+    <!-- header  -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark linear-gradient " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#" >
+              <img  src="img/CCSI Women Canada-01.png" alt="" id="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://ccsi.global/">CCSI Family
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="LeaderShipAndExpirts.html">Leadership & Experts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </nav>    
+    </div> 
+    <div class="hidd" style="height:70px;"></div>
+
+   <section class="contactSection">
+        <div class="conntactUs">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="box">
+                <!--form --->
+                <div class="contact  form">
+                    <h3>Send A Message</h3>
+                    <form action="#">
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>First Name</span>
+                                    <input type="text" placeholder="johan">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Last Name</span>
+                                    <input type="text" placeholder="johan">
+                                </div>
+                            </div>
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email Address</span>
+                                    <input type="text" placeholder="johandone@gmail.com">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Mobile</span>
+                                    <input type="text" placeholder="+91 897 733 334">
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Message</span>
+                                    <textarea placeholder="write your message here"></textarea>
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="send">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <!--info box-->
+                <div class="contact info">
+                    <h1>Contact Us</h1>
+                    <div class="infoBox">
+                        <div>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <p>Cannaught palace, New Delhi <br>INDIA</p>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <a href="#">Lorem@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></i></span>
+                            <a href="tel:+91 987 654 3210">+91 987 654 3210</a>
+                        </div>
+                        <!-- <ul class="sci">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                 <!--map -->
+                <!-- <div class="contact map"></div> -->
+            </div>
+        </div>
+   </section>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
+                <div>
+                    <img class="footer-logo" src="img/CCSI Women Canada-01.png" alt="">
+                </div>
+            </div>
+          
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
+             <div class="hidd" style="height: 30px; "></div>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Supports</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+  </footer>
+</body>
+</html>
+<script type="text/javascript" src="js/script.js"></script>

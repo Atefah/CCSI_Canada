@@ -22,12 +22,9 @@ function scrollFunction() {
     document.getElementById("logo").style.width = "250px";
   } else {
     document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("logo").style.width = "200px";
+    document.getElementById("logo").style.width = "350px";
   }
 }
-// required on 
-//                                   invalid="this.setCustomValidity('please enter your name')" on 
-//                                   input="this.setCustomValidity('')"
 
 
 

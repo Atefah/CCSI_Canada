@@ -1,7 +1,3 @@
-// function reswize(){
-//          document.getElementById("logo").style.width="200px";
-//           document.getElementById("logo").style.transition="all 0.5s ease-in-out 0";     
-// }
 
 
 $(document).ready(function () {
@@ -18,28 +14,12 @@ $(document).ready(function () {
       
 })
 
-// function myFunction() {
-//   var dots = document.getElementById("dots");
-//   var moreText = document.getElementById("more");
-//   var btnText = document.getElementById("myBtn");
-//   var btnText2 = document.getElementById("myBtn2");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more";
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less";
-//     moreText.style.display = "inline";
-//   }
-// }
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("navbar").style.padding = "10px 10px";
-    document.getElementById("logo").style.width = "100px";
+    document.getElementById("logo").style.width = "250px";
   } else {
     document.getElementById("navbar").style.padding = "20px 10px";
     document.getElementById("logo").style.width = "200px";

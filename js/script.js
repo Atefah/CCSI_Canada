@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
 	$('.invisible-content').hide();
 	$(document).on('click',"#btn", function () {
@@ -19,10 +18,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("navbar").style.padding = "10px 10px";
-    document.getElementById("logo").style.width = "250px";
+    document.getElementById("logo").style.width = "300px";
   } else {
     document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("logo").style.width = "350px";
+    document.getElementById("logo").style.width = "400px";
   }
 }
 

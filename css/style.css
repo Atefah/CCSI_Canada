@@ -13,11 +13,8 @@ body p{
 	word-spacing: normal;
 	line-height: 30px;
 	text-align: justify;
-	overflow: hidden;
-	
+	overflow: hidden;	
 }
-
-
 .hr{
 	width: 100px;
 	height: 3px;
@@ -25,52 +22,29 @@ body p{
 	border-radius: 15%;
 	margin: auto;
 	}
-	
-
 h1,h2,h3,h4,h5{
 	color: #025196;
-	font-size: 25px;
+	font-size: 3.5rem;
 	font-weight: bold;
+	text-align: center;
+	letter-spacing: 3px;
 }
 
 .clr{
 	clear: both;
 }
-
-
-#logo {transition:0.4s ;}
-
-
-.logo {
-	width: 400px;
-	
-	
-}
-
- 
-
 .linear-gradient {
-
-     /* clip-path: polygon(0% 0%, 0% 100%, 100% 50%, 100% 0%); */
-	 background: linear-gradient(55deg, #FFFFFF 50%, #4174C0 50%);
-	 
-	 
-	 
+	background: linear-gradient(55deg, #FFFFFF 50%, #4174C0 50%);
 }
+#logo { transition:0.4s; }
+
+.logo { width: 400px;}
 
 
-
+ /*index design*/
 
 /*our mission section*/
-/* *{
-	margin:0;
-	  padding:0;
-	  box-sizing:border-box;
-	  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  } */
-  
  .about-us{
-
 	/* background: url(../img/about-us.jpeg) no-repeat left; */
 	background-size: 55%;
 	background-image: linear-gradient(to right,white 50%,#d1e5f6);
@@ -78,155 +52,36 @@ h1,h2,h3,h4,h5{
 	overflow: hidden;
 	padding: 100px;
   } 
+   /*this section must be removed */
   .about-us h1{
 	margin: auto;	
 	position: absolute;
-	top: 600px;
+	top: 400px;
 	left: 10px;
 	font-size: 80px;
   }
+
   .linerar-container{
 	width: 55%;
-  float: right;
+  	float: right;
 	background-color: #fdfdfd;
 	padding: 80px;
-
-  }
-  .linerar-container h1{
-	margin-bottom :30px;
-	font-size: 30px;
-	font-weight: 500;
-  }
-  
-  @media screen and (max-width: 1200px ) {
-	.linerar-container{
-	  padding: 10px;
-
-	}
   }
 
-  @media screen and (max-width: 1000px ) {
-	.about-us{
-	  background-size: 100%;
-	  padding: 100px 44px;
+  /* logo and website*/
+  .logoAndWebsite{
+	width: 50%;
+	margin: auto;
+	box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+	padding: 50px;
 
-	}
-	.about-us h1{
-		display: none;
-	  }
-	.linerar-container{
-	  width: 100%;
-	}
   }
-
-  @media screen and (max-width: 800px ) {
-	.about-us{
-	  padding:0px;
-
-	}
-	.about-us h1{
-		display: none;
-	  }
- 
-	.linerar-container{
-	  padding: 60px;
-	}
-  }
-
-
-
-  /* our services*/
-  .title h1{
+.logoAndWebsite p{
 	text-align: center;
-	padding-top: 50px;
-	font-size: 42px;
-  }
-
-  .services{
-	width: 85%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 85px auto;
-	text-align: center;
-  }
-  .services-card{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	margin: 0px 20px;
-	padding: 20px 20px;
-	background-color: #efefef;
-	border-radius: 10px;
-	cursor: pointer;
-
-  }
-  .services-card:hover{
-	background-image: linear-gradient(to right,white,#025196);
-	transition: 0.4 ease;
-
-  }
-  .services-card .icon{
-	font-size: 35px;
-	margin-bottom: 10px;
-
-  }
-
-  .services-card h1{
-	font-size: 28px;
-	color:#4174C0;
-	margin-bottom: 20px;
-  }
-  .services-card p{
-   font-size: 17px;
-   margin-bottom: 30px;
-   line-height: 1.5;
-   color: #545454;
-
-  }
-  
-  .button{
-	font-size: 15px;
-	text-decoration: none;
-	color: #fff;
-	background-color: #025196;
-	padding: 8px 12px;
-	border-radius: 5px;
-	letter-spacing: 1px;
-
-  }
-  .button:hover{
-	text-decoration: none;
-	color: #025196;
-	background-color: white ;
-	transition: 0.4s ease;
-  }
-  @media screen and (max-width: 940px ) {
-	.services{
-	  display: flex;
-	  flex-direction: column;
-  }
-  .card{
-	width: 85%;
-	display: flex;
-	margin: 28px 0px;
-  }
-
-#navbar  a{
-	color:#4174C0;
-
-  }
-  #navbar a.active {
-	color: #0462ef;
-	font-weight: bold;
-  }
-  #navbar a:hover {
-	color: #0462ef;
-
-  }
+	text-align: justify;
 }
+
+  
 
 /* leaddershiip seection*/
    
@@ -239,13 +94,7 @@ a{
 	background-color: #fff;
   }
   .heading{
-	text-transform: uppercase;
-	font-size: 3.5rem;
-	letter-spacing: 3px;
 	margin-right: -3px;
-	/* margin-bottom: 5rem; */
-	text-align: center;
-	color: #025196;
 	position: relative;
   }
 
@@ -259,6 +108,7 @@ a{
 	flex-direction: row;
 
   }
+
   .card{
 	width: 42rem;
 	padding: 20px;
@@ -271,50 +121,31 @@ a{
 	box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2) ;
   }
 
-  
-
   .card .card-image{
 	width: 100%;
 	height: 20rem;
 	background-size: cover;
 	object-fit: cover;
-	/* -webkit-clip-path: polygon(0 0, 100% 0 , 100% 78%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0 , 100% 78%, 0% 100%); */
-  }
-
-  .profile-image{
-	  width: 15rem;
-	  height: 15rem;
-	  object-fit: cover;
-	  border-radius: 50%;
-	  margin-top: -7rem;
-	  z-index: 999;
-	  border: 1rem solid #ebeef8;
 
   }
-  .card h1{
-	font-size: 2.5rem;
-	color: #333;
-	/* margin: .5rem; */
-  }
+
   .job-title{
 	color: #777;
 	font-size: 1.5rem;
 	font-weight: 300;
   }
-  .about .additional-conten{
 
+  .about .additional-conten{
 	font-size: 10px;
 	color: #545454;
 	line-height: 30px;
 	text-align: justify;
   }
-   .read-more-link{
+
+.read-more-link{
 	padding: .3rem 1.5rem;
-	/* background-color: #025196; */
 	background-color: transparent;
 	border-radius: 2rem;
-	/* color: #eee; */
 	color: #025196;
 	border: none;
 	font-size: 1.4rem;
@@ -332,6 +163,7 @@ a{
 	transform: translateY(0);
 	box-shadow: none;
   }
+
   .social-media{
 	width: 100%;
 	list-style: none;
@@ -341,6 +173,7 @@ a{
 	margin-top: 1.5rem;
 	border-top: 1px solid rgba(0, 0, 0, .1);
   }
+
   .social-media i{
   font-size: 3rem;
   transition: color .5s;
@@ -361,6 +194,259 @@ a{
   .fa.fa-instagram:hover{
 	color: #00cde8;
   }
+  
+  /* contact design*/
+  .contactSection{
+	background: #ffffff;
+	}
+
+	.conntactUs{
+		position: relative;
+		width: 80%;
+		margin: auto;
+	}
+
+	.box{
+		position: relative;
+	}
+	.form{
+		grid-area: form;
+	}
+	.info{
+		grid-area: info;
+	}
+.contact{
+	padding: 40px;
+	/* background-image: linear-gradient(to right,white 50%,#025196); */
+	background-image: linear-gradient(to right,white 50%,#d1e5f6);
+}
+.box{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"form info";
+
+}
+
+.formBox{
+	position: relative;
+	width: 100%;
+	
+}
+
+.formBox .row50{
+	display: flex;
+	gap: 20px;
+}
+
+.inputBox{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+.formBox .row100 .inputBox{
+	width: 100%;
+}
+.inputBox span{
+	color: #025196;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.inputBox input textarea{
+   padding: 10px;
+   font-size: 1.1rem;
+   outline: none;
+   border: 1px solid #333;
+}
+.inputBox textarea{
+	resize: none;
+	min-height: 220px;
+	margin-bottom: 10px;
+
+}
+.inputBox input[type='submit']{
+	background: #025196;
+	color: #fff;
+	border: none;
+	font-size: 1.1rem;
+	max-width: 120px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 14px 15px;
+}
+
+.inputBox input[type='submit']:hover{
+	color: #025196;
+	background-color: white;
+}
+.inputBox ::placeholder{
+	color: #999;
+	padding: 10px;
+}
+
+.info{
+	/* background-image: linear-gradient(to right,white 50%,#d1e5f6); */
+	background-image: linear-gradient(to right,white ,#025196);
+
+}
+
+.info .infoBox div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.info .infoBox div span i {
+	min-width: 40px;
+	height: 40px;
+	color: #fff;
+	background: #18b7ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.info .infoBox div a{
+	color: #0e3959;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+  /* end contact design*/
+
+/* footer style*/
+footer{
+	background-image: linear-gradient(to right, white 50%,#025196);
+	
+}
+.footer-logo{
+    width:100%;
+}
+/* end footer style*/
+
+  @media screen and (max-width: 1200px ) {
+
+	.linerar-container{
+	  padding: 10px;
+
+	}
+  }
+
+
+  @media screen and (max-width: 1000px ) {
+
+	.about-us{
+	  background-size: 100%;
+	  padding: 100px 44px;
+
+	}
+	/* this section must bee remove*/
+	.about-us h1{
+		position: absolute;
+		top: 150px;
+		left: 10px;
+	  }
+
+	.linerar-container{
+	  width: 100%;
+	}
+
+  }
+
+  @media screen and (max-width: 940px ) {
+	.card{
+		width: 85%;
+		display: flex;
+		margin: 28px 0px;
+	  }
+	
+	#navbar  a{
+		color:#4174C0;
+	
+	  }
+	  #navbar a.active {
+		color: #0462ef;
+		font-weight: bold;
+	  }
+	  #navbar a:hover {
+		color: #0462ef;
+	
+	  }
+
+	.logoAndWebsite{
+		width: 100%;
+	}
+	.contactSection{
+		background: #03a9f5;
+	}
+	.conntactUs{
+		padding: 20px;
+	}
+	.box{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		 "form"
+		 "info";
+		 /* "map"; */
+	}
+	
+	.formBox .row50{
+		display: flex;
+		gap: 0;
+		flex-direction: column;
+
+	}
+	.inputBox{
+		width: 100%;
+	}
+	.contact{
+		padding: 30px;
+	}
+
+	
+}
+
+  @media screen and (max-width: 800px ) {
+	#navbar  a{
+		color:#4174C0;
+	  }
+
+	  #navbar a.active {
+		color: #0462ef;
+		font-weight: bold;
+	  }
+
+	  #navbar a:hover {
+		color: #0462ef;
+	  }
+
+	.about-us{
+	  padding:0px;
+
+	}
+	/* this section must bee remove*/
+	.about-us h1{
+		position: absolute;
+		top: 150px;
+		left: 50px;
+		font-size: 50px;
+		
+		}
+ 
+	.linerar-container{
+	  padding: 60px;
+	}
+	
+	
+  }
 
 
   @media screen and (max-width: 700px ) {
@@ -369,6 +455,10 @@ a{
 	  flex-wrap: wrap;
 	  justify-content: center;
 	  align-items: center;
+	}
+
+	.logoAndWebsite{
+		width: 100%;
 	}
 
 	.card{
@@ -385,69 +475,22 @@ a{
 	.logo {
 		width: 190px ;
 	}
-}
-
-
-  @media screen and (max-width: 940px ) {
-	.services{
-	  display: flex;
-	  flex-direction: column;
-  }
-  .card{
-	width: 85%;
-	display: flex;
-	margin: 28px 0px;
-  }
-
-#navbar  a{
-	color:#4174C0;
-
-  }
-  #navbar a.active {
-	color: #0462ef;
-	font-weight: bold;
-  }
-  #navbar a:hover {
-	color: #0462ef;
-
-  }
-}
-
-@media screen and (max-width: 800px) {
-
-	#navbar  a{
-		color:#4174C0;
-	
+	.formBox{
+		width: 100%;
+		
+	}
+	.crad-wrapper{
+		width: 100%;
 	  }
+	  .conntactUs{
+		padding: 0px;
+	}
 
-	  #navbar a.active {
-		color: #0462ef;
-		font-weight: bold;
-	  }
-	  #navbar a:hover {
-		color: #0462ef;
-	
-	  }
-}
-/* footer style*/
-footer{
-	background-image: linear-gradient(to right, white 50%,#025196);
-}
-.footer-logo{
-    width:100%;
-}
-.f-col{
-    padding:0;
-    box-sizing: border-box;
-    color:gray;
-}
-
-.f-col ul{
-    list-style: none;
-	padding-left: 100px;
-	   
-}
-.f-col ul a{
-    color: gray;  
 	
 }
+
+
+
+
+
+

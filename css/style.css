@@ -45,12 +45,12 @@ h1,h2,h3,h4,h5{
 
 /*our mission section*/
  .about-us{
-	/* background: url(../img/about-us.jpeg) no-repeat left; */
-	background-size: 55%;
-	background-image: linear-gradient(to right,white 50%,#d1e5f6);
+	background: url(../img/our\ mission\ final-01.jpeg) no-repeat left;
+	background-size: 50%;
 	background-color: aliceblue;
 	overflow: hidden;
 	padding: 100px;
+	
   } 
    /*this section must be removed */
   .about-us h1{
